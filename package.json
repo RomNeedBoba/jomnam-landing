@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "mocha --exit"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -15,6 +16,7 @@
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
     "aos": "3.0.0-beta.6",
+    "mocha": "^11.7.4",
     "next": "15.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -25,6 +27,8 @@
     "@tailwindcss/postcss": "^4.0.3",
     "@types/aos": "^3.0.7",
     "@types/css-modules": "^1.0.5",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "16.0.1",
     "postcss": "^8.5.1",
     "tailwindcss": "^4.0.3"
   }

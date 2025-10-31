@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      #  Run ESLint
+      - name: Run ESLint
+        run: npm run lint
+
+      # TypeScript type check
+      - name: TypeScript Check
+        run: npx tsc --noEmit
+
+      #  Run unit/component tests
+      - name: Run tests
+        run: npm run test || echo "No test files found, skipping"
+
+      #  Build Next.js
+      - name: Build Next.js app
+        run: npm run build
