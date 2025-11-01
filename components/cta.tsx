@@ -1,5 +1,6 @@
+"use client";
+
 import Image from "next/image";
-import BlurredShape from "@/public/images/blurred-shape.svg";
 
 export default function Cta() {
   return (
@@ -10,7 +11,7 @@ export default function Cta() {
       >
         <Image
           className="max-w-none"
-          src={BlurredShape}
+          src="/images/blurred-shape.svg" // ✅ reference public folder directly
           width={760}
           height={668}
           alt="Blurred shape"
