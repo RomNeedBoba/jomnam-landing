@@ -1,8 +1,7 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image-01.jpg"; // StaticImageData import
+import VideoThumb from "@/public/images/hero-image-01.jpg"; // ✅ import image
 
 export default function HeroHome() {
   return (
@@ -22,8 +21,7 @@ export default function HeroHome() {
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              Tools to help Khmer developers, researchers and students create
-              intelligent applications easily
+              Tools to help Khmer developers, researchers and students create intelligent applications easily
             </p>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <a
@@ -46,11 +44,11 @@ export default function HeroHome() {
           </div>
 
           <ModalVideo
-            thumb={VideoThumb}
+            thumb={VideoThumb} // ✅ pass imported image
             thumbWidth={1104}
             thumbHeight={576}
             thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4" // public folder video
+            video="/videos/video.mp4" // public folder, string is fine here
             videoWidth={1920}
             videoHeight={1080}
           />
