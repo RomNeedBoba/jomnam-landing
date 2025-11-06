@@ -27,8 +27,7 @@ export default function Header() {
         </div>
 
         {/* Right: CTA */}
-        <Link
-          href="/get-started"
+        <Link href="https://dashboard.jomnam.tech" passHref
           className="rounded-lg bg-indigo-600 px-5 py-3 text-white font-medium hover:bg-indigo-500"
         >
           Get Started
