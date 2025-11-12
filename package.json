@@ -13,7 +13,7 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@types/react-dom": "19.0.3",
-    "aos": "3.0.0-beta.6",
+    "aos": "^3.0.0-beta.6",
     "mocha": "^11.7.4",
     "next": "15.1.6",
     "react": "19.0.0",

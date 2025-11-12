@@ -10,19 +10,20 @@ export default function Header() {
 
         {/* Left: Logo + Menu together */}
         <div className="flex items-center gap-10">
-          <Image
-            src="/images/Raw.png"
-            alt="Logo"
-            width={50}
-            height={40}
-            className="object-contain"
-          />
-
+          <Link href="https://jomnam.tech">
+            <Image
+              src="/images/Raw.png"
+              alt="Logo"
+              width={50}
+              height={40}
+              className="object-contain"
+            />
+          </Link>
 
           <nav className="flex items-center gap-8 text-gray-200 font-medium">
-            <Link href="/resources" className="hover:text-white">Resources</Link>
-            <Link href="/docs" className="hover:text-white">Docs</Link>
-            <Link href="/blog" className="hover:text-white">Blog</Link>
+            <Link href="https://docs.jomnam.tech/dataset/aksor" className="hover:text-white">Resources</Link>
+            <Link href="https://docs.jomnam.tech" className="hover:text-white">Docs</Link>
+            <Link href="/blog" className="hover:text-white"></Link>
           </nav>
         </div>
 
