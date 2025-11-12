@@ -18,7 +18,7 @@ importers:
         specifier: 19.0.3
         version: 19.0.3(@types/react@19.2.2)
       aos:
-        specifier: 3.0.0-beta.6
+        specifier: ^3.0.0-beta.6
         version: 3.0.0-beta.6
       mocha:
         specifier: ^11.7.4
